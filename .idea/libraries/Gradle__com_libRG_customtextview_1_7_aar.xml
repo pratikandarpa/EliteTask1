@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.libRG:customtextview:1.7@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/customtextview-1.7.aar/48c92734ee1dfdbf008b4085b8e5f2a9/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/customtextview-1.7.aar/48c92734ee1dfdbf008b4085b8e5f2a9/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.libRG/customtextview/1.7/12f8f7eff00ee2482940edcd3fe563acd4894c71/customtextview-1.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

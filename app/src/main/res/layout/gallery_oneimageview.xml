@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="180sp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="3dp">
+
+    <ImageView
+        android:id="@+id/detailsphoto"
+        android:layout_width="match_parent"
+        android:layout_height="150sp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher" />
+
+    <CheckBox
+        android:id="@+id/grid_item_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="@style/ProgressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detailsphoto"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="-5sp"
+        android:indeterminate="false"
+        android:max="100" />
+
+    <ImageView
+        android:id="@+id/detailshidephoto"
+        android:layout_width="match_parent"
+        android:layout_height="150sp"
+        android:background="@color/Black"
+        android:scaleType="fitXY"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/verified"
+        android:layout_width="44dp"
+        android:layout_height="30dp"
+        android:visibility="gone"
+        android:layout_alignEnd="@+id/grid_item_checkbox"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="-12dp"
+        android:src="@drawable/verified" />
+</RelativeLayout>

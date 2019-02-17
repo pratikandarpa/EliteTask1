@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tog1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Toggle">
+
+    <ToggleButton
+        android:id="@+id/t1"
+        android:layout_width="100sp"
+        android:layout_height="40sp"
+        android:layout_marginLeft="25sp"
+        android:layout_marginTop="25sp"
+        android:background="@drawable/blue"
+        android:textOff="@string/off"
+        android:textOn="@string/on" />
+
+    <belka.us.androidtoggleswitch.widgets.ToggleSwitch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25sp"
+        custom:textToggleCenter="XOR"
+        custom:textToggleLeft="OR"
+        custom:textToggleRight="AND" />
+
+    <Switch
+        android:id="@+id/s1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="27sp"
+        android:layout_marginTop="25sp" />
+
+    <com.mahfa.dnswitch.DayNightSwitch
+        android:id="@+id/day_night_switch"
+        android:layout_width="76dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25sp" />
+</LinearLayout>

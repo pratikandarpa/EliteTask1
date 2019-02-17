@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/button" />
+
+        <Button
+            android:id="@+id/b2"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/roundeb"
+            android:text="@string/text_view" />
+
+        <Button
+            android:id="@+id/b3"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="@string/edit_text" />
+
+        <Button
+            android:id="@+id/b4"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_custom"
+            android:text="@string/spinner" />
+
+        <Button
+            android:id="@+id/b5"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="@string/checkbox_amp_switch_button" />
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/b6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+            fancy:fb_borderColor="#000"
+            fancy:fb_borderWidth="1dp"
+            fancy:fb_defaultColor="#7ab800"
+            fancy:fb_focusColor="#9bd823"
+            fancy:fb_fontIconResource="&#xf04b;"
+            fancy:fb_iconPosition="left"
+            fancy:fb_radius="30dp"
+            fancy:fb_text="SHUFFLE PLAY"
+            fancy:fb_textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/b7"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_custom"
+            android:text="@string/gridview" />
+
+        <Button
+            android:id="@+id/b8"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_custom"
+            android:text="@string/toggle_amp_switch_button" />
+
+        <Button
+            android:id="@+id/b9"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_custom"
+            android:text="@string/autocomplete" />
+
+        <Button
+            android:id="@+id/b10"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/b9"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_custom"
+            android:text="Recyclerview" />
+
+        <Button
+            android:id="@+id/b11"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/b10"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_custom"
+            android:text="AutoSize" />
+
+        <Button
+            android:id="@+id/b12"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/b11"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_custom"
+            android:text="Gallery" />
+
+        <Button
+            android:id="@+id/b13"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/b11"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_custom"
+            android:text="Notification" />
+
+        <Button
+            android:id="@+id/b14"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/b11"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_custom"
+            android:text="PDF" />
+
+    </LinearLayout>
+</ScrollView>

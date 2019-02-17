@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/bac1"
+    android:background="@drawable/gradient_list"
+    tools:context=".text">
+
+    <com.lombokcyberlab.android.multicolortextview.MultiColorTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:colorScheme="google"
+        app:text="Google Colors"
+        app:textSize="30"
+        app:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/text_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        android:background="#000"
+        android:gravity="center"
+        android:text="@string/hello_world"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textColorHighlight="@android:color/primary_text_dark"
+        android:textSize="50dp"
+        android:textStyle="bold|italic" />
+
+    <com.libRG.CustomTextView
+        android:id="@+id/c6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="150sp"
+        android:text="CheckedTextView"
+        android:textColor="@color/colorPrimary"
+        android:visibility="visible"
+        app:lib_checkMarkTint="@color/colorPrimary"
+        app:lib_checkedIconPosition="left"
+        app:lib_setChecked="true"
+        app:lib_setCheckedText="true"
+        app:lib_setRadius="3dp"
+        app:lib_setRoundedBorderColor="@color/colorPrimary"
+        app:lib_setRoundedView="true"/>
+
+<com.libRG.CustomTextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="200dp"
+    app:lib_setExpandableText="true"
+    android:textSize="20dp"
+    android:text="Hello,Hello,HelloHello,Hello,HelloHelloHelloHelloHello"
+    app:lib_setTrimLines="1"
+    app:lib_setCollapseHint="showless" />
+</RelativeLayout>

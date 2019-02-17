@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Checkbo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hobby: "
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/c1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Songs "
+            tools:ignore="OnClick" />
+
+        <CheckBox
+            android:id="@+id/c2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Football "
+            tools:ignore="OnClick" />
+
+        <CheckBox
+            android:id="@+id/c3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dance "
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="70dp"
+        android:background="#fff000" />
+
+    <net.igenius.customcheckbox.CustomCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="85sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="125dp"
+        android:background="#fff000" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/r1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A" />
+
+        <RadioButton
+            android:id="@+id/r2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B" />
+
+
+        <RadioButton
+            android:id="@+id/r3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C" />
+
+        <Button
+            android:id="@+id/b2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:text="Submit" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="185dp"
+        android:background="#fff000" />
+
+    <!--<co.ceryle.radiorealbutton.RadioRealButtonGroup-->
+        <!--android:layout_marginTop="192dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:rrbg_animateDrawables_enter="overshoot"-->
+        <!--app:rrbg_animateTexts_enter="overshoot"-->
+        <!--app:rrbg_dividerColor="#000"-->
+        <!--app:rrbg_dividerSize="1dp"-->
+        <!--app:rrbg_radius="10dp"-->
+        <!--app:rrbg_selectorColor="#ff0000"-->
+        <!--app:rrbg_selectorSize="6dp">-->
+
+        <!--<co.ceryle.radiorealbutton.RadioRealButton-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:rrb_drawable="@mipmap/ic_launcher"-->
+            <!--app:rrb_drawableHeight="36dp"-->
+            <!--app:rrb_drawablePadding="8dp"-->
+            <!--app:rrb_drawableWidth="36dp"-->
+            <!--app:rrb_ripple="true"-->
+            <!--app:rrb_rippleColor="#000"-->
+            <!--app:rrb_text="Button 1"-->
+            <!--app:rrb_textColor="#000" />-->
+
+        <!--<co.ceryle.radiorealbutton.RadioRealButton-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:rrb_drawable="@mipmap/ic_launcher"-->
+            <!--app:rrb_drawableGravity="right"-->
+            <!--app:rrb_drawableHeight="36dp"-->
+            <!--app:rrb_drawablePadding="8dp"-->
+            <!--app:rrb_drawableWidth="36dp"-->
+            <!--app:rrb_ripple="true"-->
+            <!--app:rrb_rippleColor="#000"-->
+            <!--app:rrb_text="Button 2"-->
+            <!--app:rrb_textColor="#000" />-->
+    <!--</co.ceryle.radiorealbutton.RadioRealButtonGroup>-->
+</RelativeLayout>

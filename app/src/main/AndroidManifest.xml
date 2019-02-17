@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.elitetask1.elitetask1">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:name="com.elitetask1.Notification.AppNotification"
+        android:allowBackup="true"
+        android:authorities="${applicationId}.share"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".text" />
+        <activity android:name=".Edit" />
+        <activity android:name=".Forspinner" />
+        <activity android:name=".Checkbo" />
+        <activity android:name=".List" />
+        <activity android:name=".Grid" />
+        <activity android:name=".Toggle" />
+        <activity android:name=".Autocomplete" />
+        <activity android:name=".Recyclerview" />
+        <activity android:name=".AutoSizeRecycler" />
+        <activity android:name="com.elitetask1.Gallery.GalleryActivity" />
+        <activity android:name="com.elitetask1.Gallery.GalleryDetailActivity" />
+        <activity android:name="com.elitetask1.Gallery.Viewpagergallery" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.elitetask1.elitetask1.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"
+                tools:replace="android:resource" />
+        </provider>
+
+        <activity android:name="com.elitetask1.Notification.NotificationActivity" />
+
+        <receiver android:name="com.elitetask1.Notification.AlarmReceiver">
+            <intent-filter>
+                <action android:name="com.elitetask1.elitetask1.DISPLAY_NOTIFICATION" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".PDF"></activity>
+    </application>
+
+</manifest>
